@@ -1,0 +1,70 @@
+/* Container for the page */
+.container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Banner section */
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Tabs section */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .tab:hover {
+    background-color: #ccc;
+  }
+  
+  .tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Content section */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Left side with the image */
+  .content-left img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Right side with the text */
+  .content-right {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .content-right {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
